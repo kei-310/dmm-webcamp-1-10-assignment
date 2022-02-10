@@ -44,15 +44,15 @@ main{
 
 
 .box:nth-child(1) .img{
-    background-image: url(img1-9/flow01.png);
+    background-image: url(img/flow01.png);
 }
 
 .box:nth-child(2) .img{
-    background-image: url(img1-9/flow02.png);
+    background-image: url(img/flow02.png);
 }
 
 .box:nth-child(3) .img{
-    background-image: url(img1-9/flow03.png);
+    background-image: url(img/flow03.png);
 }
 
 
@@ -67,4 +67,30 @@ main{
 h3{
     margin-top:15px ;
     margin-bottom: 5px;
+}
+
+
+@media screen and (max-width:768px){
+   
+    main{
+        width: 100%;
+        margin: 50px auto;
+        display: block;
+    }
+
+    .box{
+        width: 90%;
+        margin: 0 auto 20px auto;
+    }
+    .box:nth-child(3){
+        margin: 0 auto;
+    }
+    
+    .img{
+        height: 150px;
+     
+        width: 99%;
+    }
+
+
 }
